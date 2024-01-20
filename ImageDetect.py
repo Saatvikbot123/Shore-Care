@@ -10,4 +10,5 @@ img = "https://ultralytics.com/images/zidane.jpg"  # or file, Path, PIL, OpenCV,
 results = model(img)
 
 # Results
-results.print()  # or .show(), .save(), .crop(), .pandas(), etc.
+results.print()
+results.show() # or .show(), .save(), .crop(), .pandas(), etc.

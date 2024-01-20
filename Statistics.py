@@ -1,6 +1,5 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-
 def collect_data():
     print("Enter the amount of each type of trash collected:")
     plastic_bottles = int(input("Plastic Bottles: "))
