@@ -1,2 +1,2 @@
 # Shore-Care
-Boilermaker 24 Hackathon projet
+Boilermaker 24 Hackathon project
