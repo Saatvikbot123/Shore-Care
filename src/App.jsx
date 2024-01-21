@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from 'react';
 import Header from "./components/Header/Header.jsx";
 import Examples from "./components/Examples.jsx";
+import Stats from "./components/Stats.jsx";
+import Statistics from "./components/Statistics.jsx";
 // import { ChartJs, Tooltip, Title, ArcElement, Legend } from "chart.js";
 // ChartJs.register(
 //   Tooltip, Title, ArcElement, Legend
@@ -13,6 +15,7 @@ import Examples from "./components/Examples.jsx";
 //import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+
   return (
     <>
       {/* <Router>
@@ -24,10 +27,13 @@ function App() {
       <Header />
       <main>
         <Examples />
+        <Stats />
+        <Statistics />
         <h2>Time to get started!</h2>
       </main>
     </>
   );
+
 }
 
 export default App;

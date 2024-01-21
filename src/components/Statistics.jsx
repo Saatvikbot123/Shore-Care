@@ -2,10 +2,10 @@ import { useState } from "react";
 import TabButton from "./TabButton";
 import Section from "./Section";
 import Tabs from "./Tabs";
-import { EXAMPLES } from "../data";
+import { STATISTICS } from "../data3";
 
 
-export default function Examples() {
+export default function Statistics() {
     const [selectedTopic, setSelectedTopic] = useState();
 
   function handleSelect(selectedButton) {
@@ -19,36 +19,24 @@ export default function Examples() {
   if (selectedTopic) {
     tabContent = (
       <div id="tab-content">
-        <h3>{EXAMPLES[selectedTopic].title}</h3>
-        <p>{EXAMPLES[selectedTopic].description}</p>
+        <h3>{STATISTICS[selectedTopic].title}</h3>
+        <p>{STATISTICS[selectedTopic].description}</p>
       </div>
     );
   }
 
     return (
-      <Section title="Why We Exist" id="examples">
+      <Section title="Statistics" id="statistics">
         <Tabs
           buttonsContainer="menu"
           buttons=
           {
             <>
               <TabButton
-                isSelected={selectedTopic === "components"}
-                onClick={() => handleSelect("components")}
+                isSelected={selectedTopic === "testing"}
+                onClick={() => handleSelect("testing")}
               >
-                Pollution
-              </TabButton>
-              <TabButton
-                isSelected={selectedTopic === "jsx"}
-                onClick={() => handleSelect("jsx")}
-              >
-                Sea Life
-              </TabButton>
-              <TabButton
-                isSelected={selectedTopic === "props"}
-                onClick={() => handleSelect("props")}
-              >
-                Promote Healthy Lifestyle
+                Plastic
               </TabButton>
             </>
           }
